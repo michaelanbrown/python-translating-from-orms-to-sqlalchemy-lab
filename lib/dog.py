@@ -5,6 +5,7 @@ def create_table(base, engine):
 
 def save(session, dog):
     session.add(dog)
+    session.commit()
 
 def get_all(session):
     pass
