@@ -1,6 +1,6 @@
 from models import Dog
 
-def create_table(base):
+def create_table(base, engine):
     base.metadata.create_all(engine)
 
 def save(session, dog):
