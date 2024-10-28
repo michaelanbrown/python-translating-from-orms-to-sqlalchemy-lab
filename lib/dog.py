@@ -8,7 +8,7 @@ def save(session, dog):
     session.commit()
 
 def get_all(session):
-    pass
+    return session.query(Dog).all()
 
 def find_by_name(session, name):
     pass
